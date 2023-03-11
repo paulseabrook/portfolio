@@ -3,8 +3,52 @@
   margin: 0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: none;
 }
 
+body {
+  background-color: rgb(118, 115, 115);
+}
+
+.Main {
+  height: 100%;
+  height: 100vh;
+  border: solid rgb(118, 115, 115) 10px;
+  border-radius: 10px;
+  border-radius: 2px 4px 0 0;
+}
+
+.homeMain {
+  background: linear-gradient(
+    104deg,
+    rgba(181, 126, 54, 1) 17%,
+    rgba(140, 117, 63, 1) 88%
+  );
+}
+
+.skillsMain {
+  background: linear-gradient(
+    104deg,
+    rgba(135, 200, 156, 1) 17%,
+    rgba(94, 94, 144, 1) 73%
+  );
+}
+
+.projectsMain {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+.aboutMain {
+  background: linear-gradient(
+    104deg,
+    rgba(72, 125, 150, 1) 43%,
+    rgba(39, 101, 64, 1) 64%
+  );
+}
 header {
   background-color: rgb(35, 66, 89);
 }
