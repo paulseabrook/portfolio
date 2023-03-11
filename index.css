@@ -4,6 +4,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: none;
+  color: antiquewhite;
 }
 
 body {
@@ -18,18 +19,61 @@ body {
   border-radius: 2px 4px 0 0;
 }
 
+.homeContent {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.homeContent > * {
+  margin: 10px;
+}
+
+.homeMainInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.homeHeader {
+  font-size: 45px !important;
+}
+
+.homeInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  height: 50vh;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+}
+
+.socialIcons > * {
+  font-size: 30px;
+}
+
 .homeMain {
   background: linear-gradient(
     104deg,
-    rgba(181, 126, 54, 1) 17%,
-    rgba(140, 117, 63, 1) 88%
+    rgb(144, 100, 43) 17%,
+    rgb(116, 97, 53) 88%
   );
 }
 
 .skillsMain {
   background: linear-gradient(
     104deg,
-    rgba(135, 200, 156, 1) 17%,
+    rgb(201, 97, 95) 17%,
     rgba(94, 94, 144, 1) 73%
   );
 }
@@ -37,7 +81,7 @@ body {
 .projectsMain {
   background: linear-gradient(
     0deg,
-    rgba(34, 193, 195, 1) 0%,
+    rgba(135, 200, 156, 1) 0%,
     rgba(253, 187, 45, 1) 100%
   );
 }
@@ -60,6 +104,13 @@ li {
 a {
   color: antiquewhite;
   text-decoration: none;
+}
+
+#headshot {
+  height: 350px;
+  width: 300px;
+  border-radius: 50%;
+  border: solid rgb(35, 66, 89) 10px;
 }
 
 .navbar {
@@ -138,5 +189,16 @@ a {
 
   .nav-menu.active {
     left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .homeContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
   }
 }
