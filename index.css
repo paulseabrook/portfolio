@@ -62,7 +62,19 @@ body {
   font-size: 30px;
 }
 
+.icon {
+  font-size: 30px;
+}
+
 .homeMain {
+  background: linear-gradient(
+    104deg,
+    rgb(105, 154, 111) 17%,
+    rgb(43, 79, 47) 88%
+  );
+}
+
+.skillsMain {
   background: linear-gradient(
     104deg,
     rgb(144, 100, 43) 17%,
@@ -70,27 +82,15 @@ body {
   );
 }
 
-.skillsMain {
-  background: linear-gradient(
-    104deg,
-    rgb(201, 97, 95) 17%,
-    rgba(94, 94, 144, 1) 73%
-  );
-}
-
 .projectsMain {
-  background: linear-gradient(
-    0deg,
-    rgba(135, 200, 156, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+  background: linear-gradient(0deg, rgb(83, 79, 146) 17%, rgb(167, 91, 91) 73%);
 }
 
 .aboutMain {
   background: linear-gradient(
     104deg,
-    rgba(72, 125, 150, 1) 43%,
-    rgba(39, 101, 64, 1) 64%
+    rgba(135, 200, 156, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
   );
 }
 header {
@@ -110,7 +110,7 @@ a {
   height: 350px;
   width: 300px;
   border-radius: 50%;
-  border: solid rgb(35, 66, 89) 10px;
+  border: solid antiquewhite 10px;
 }
 
 .navbar {
