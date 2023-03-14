@@ -23,10 +23,7 @@
         <!-- within nav element is our ul with li's and a's within the li -->
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Skills</a>
+            <div id="skillsNav" href="#" class="nav-link">Skills</div>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Projects</a>
@@ -47,7 +44,7 @@
         </div>
       </nav>
     </header>
-    <div class="Main homeMain">
+    <div class="Main homeMain" id="home">
       <div class="homeMainInner">
         <div class="homeContent">
           <img id="headshot" src="./assets/headshot1.jpeg" />
@@ -70,11 +67,33 @@
             </div>
           </div>
         </div>
-        <i class="icon fa-solid fa-arrow-down"></i>
+        <i class="arrowToSkills icon fa-solid fa-arrow-down"></i>
       </div>
     </div>
-    <div class="Main skillsMain"></div>
+    <div id="skills" class="Main skillsMain">
+      <div class="skillsMainInner">
+        <h2>Skills</h2>
+        <div class="skillsGridContainer">
+          <p>JavaScript</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>React.JS</p>
+          <p>Node.JS</p>
+          <p>Express.JS</p>
+          <p>MongoDB</p>
+          <p>Mongoose</p>
+          <p>Postman</p>
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>Python</p>
+          <p>SQL</p>
+          <p>Django</p>
+        </div>
+      </div>
+    </div>
     <div class="Main projectsMain"></div>
-    <div class="Main aboutMain"></div>
+    <div class="Main aboutMain">
+      <i class="arrowToHome icon fa-solid fa-arrow-up"></i>
+    </div>
   </body>
 </html>
