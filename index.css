@@ -33,6 +33,18 @@ body {
   height: 100%;
 }
 
+.location {
+  font-size: 25px;
+}
+
+.header0 {
+  font-size: 20px;
+}
+
+#liner {
+  font-size: 20px;
+}
+
 #mainSkillsHeader {
   font-size: 40px;
   text-align: center;
@@ -81,7 +93,6 @@ body {
 .skillsContent {
   display: flex;
   flex-direction: column;
-
   height: 75vh;
   margin-bottom: 20px;
 }
@@ -91,7 +102,7 @@ body {
 }
 
 .homeHeader {
-  font-size: 45px !important;
+  font-size: 45px;
 }
 
 .homeInfo {
