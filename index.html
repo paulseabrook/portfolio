@@ -47,10 +47,10 @@
     <div class="Main homeMain" id="home">
       <div class="homeMainInner">
         <div class="homeContent">
-          <img id="headshot" src="./assets/headshot1.jpeg" />
+          <img id="mainHeadshot" src="./assets/headshot1.jpeg" />
           <div class="homeInfo">
             <h2 class="homeHeader">Paul Seabrook</h2>
-            <p>Full Stack Software Engineer and Web Developer</p>
+            <p id="liner">Full Stack Software Engineer and Web Developer</p>
             <div class="socialIcons">
               <a
                 href="https://www.linkedin.com/in/paulwarrenseabrook/"
@@ -72,28 +72,99 @@
     </div>
     <div id="skills" class="Main skillsMain">
       <div class="skillsMainInner">
-        <h2>Skills</h2>
-        <div class="skillsGridContainer">
-          <p>JavaScript</p>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>React.JS</p>
-          <p>Node.JS</p>
-          <p>Express.JS</p>
-          <p>MongoDB</p>
-          <p>Mongoose</p>
-          <p>Postman</p>
-          <p>Git</p>
-          <p>GitHub</p>
-          <p>Python</p>
-          <p>SQL</p>
-          <p>Django</p>
+        <div class="skillsContent">
+          <h2 class="mainSkillsHeader">Skills</h2>
+          <div class="skillsContainer">
+            <h3 class="skillsHeader">Languages</h3>
+            <p>JavaScript, HTML, CSS, Python, SQL</p>
+          </div>
+
+          <div class="skillsContainer">
+            <h3 class="skillsHeader">Frameworks</h3>
+            <p>React, Node, Express, Mongoose, MongoDB</p>
+          </div>
+          <div class="skillsContainer">
+            <h3 class="skillsHeader">Tools</h3>
+            <p>Git, Bash, Figma, Bootstrap</p>
+          </div>
         </div>
+        <i class="arrowToProjects icon fa-solid fa-arrow-down"></i>
       </div>
     </div>
-    <div class="Main projectsMain"></div>
-    <div class="Main aboutMain">
-      <i class="arrowToHome icon fa-solid fa-arrow-up"></i>
+    <div id="projects" class="Main projectsMain">
+      <div class="projectsMainInner">
+        <h3 class="projectsHeader">Projects</h3>
+        <div class="projectsGrid">
+          <div class="projectContainer">
+            <a
+              class="projectLink"
+              href="https://paulseabrook.github.io/blackjack/"
+              >Blackjack</a
+            >
+            <a class="codeLink" href="https://github.com/paulseabrook/blackjack"
+              >code</a
+            >
+          </div>
+          <div class="projectContainer">
+            <a
+              class="projectLink"
+              href="https://paulseabrook.github.io/pauls-plastics/"
+              >paul's plastics.</a
+            >
+            <a
+              class="codeLink"
+              href="https://github.com/paulseabrook/pauls-plastics"
+              >code</a
+            >
+          </div>
+          <div class="projectContainer">
+            <a
+              class="projectLink"
+              href="https://movie-royale-client.onrender.com/"
+              >Movie Royale</a
+            >
+            <a
+              class="codeLink"
+              href="https://github.com/paulseabrook/movie-royale"
+              >code</a
+            >
+          </div>
+          <div class="projectContainer">
+            <a
+              class="projectLink"
+              href="https://scottank.github.io/lerpr/#/editor"
+              >Lerpr</a
+            >
+            <a
+              class="codeLink"
+              href="https://github.com/paulseabrook/lerpr/tree/main"
+              >code</a
+            >
+          </div>
+        </div>
+        <i class="arrowToAbout icon fa-solid fa-arrow-down"></i>
+      </div>
+    </div>
+    <div id="about" class="Main aboutMain">
+      <div class="aboutInnerMain">
+        <i class="arrowToHome icon fa-solid fa-arrow-up"></i>
+        <h3 id="aboutHeader">About Me</h3>
+        <div class="aboutContent">
+          <img id="casualHeadshot" src="./assets/casual.jpeg" />
+          <div class="aboutText">
+            <h3 id="aboutHello">Hello!</h3>
+            <p id="bigger">Thank you for visiting my page.</p>
+            <p>
+              My name is Paul Seabrook and I have taken a step torward pursuing
+              my passion in web development and have recently completed a full
+              -stack software engineering program. I am currently looking for
+              employment in a front-end or full-stack position. When I am not
+              programming, I enjoy being involved in and attending my church,
+              spending time with friends and family, and playing disc golf.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
