@@ -3,7 +3,9 @@ const navMenu = document.querySelector('.nav-menu')
 const skills = document.querySelector('#skills')
 const skillsNav = document.querySelector('#skillsNav')
 const projects = document.querySelector('#projects')
+const projectsNav = document.querySelector('#projectsNav')
 const about = document.querySelector('#about')
+const aboutNav = document.querySelector('#aboutNav')
 const home = document.querySelector('#home')
 const arrowToSkills = document.querySelector('.arrowToSkills')
 const arrowToProjects = document.querySelector('.arrowToProjects')
@@ -21,6 +23,8 @@ document.querySelectorAll('.nav-link').forEach((link) => {
     navMenu.classList.remove('active')
   })
 })
+
+//arrow functionality
 
 arrowToSkills.addEventListener('click', () => {
   skills.scrollIntoView({
@@ -46,8 +50,22 @@ arrowToAbout.addEventListener('click', () => {
   })
 })
 
+// Nav bar functionality
+
 skillsNav.addEventListener('click', () => {
   skills.scrollIntoView({
+    behavior: 'smooth',
+  })
+})
+
+projectsNav.addEventListener('click', () => {
+  projects.scrollIntoView({
+    behavior: 'smooth',
+  })
+})
+
+aboutNav.addEventListener('click', () => {
+  about.scrollIntoView({
     behavior: 'smooth',
   })
 })
