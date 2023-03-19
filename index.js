@@ -69,3 +69,16 @@ aboutNav.addEventListener('click', () => {
     behavior: 'smooth',
   })
 })
+
+let prevScrollpos = window.pageYOffset
+window.onscroll = function () {
+  console.log('Working')
+  let currentScrollPos = window.pageYOffset
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('.nav-menu').style.top = '0'
+  } else {
+    document.querySelector('.nav-menu').style.top = '-50px'
+    console.log(document.querySelector('.nav-menu'))
+  }
+  prevScrollpos = currentScrollPos
+}
