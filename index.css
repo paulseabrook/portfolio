@@ -192,7 +192,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-
+  max-width: 800px;
   border: solid rgba(255, 255, 255, 0.404) 5px;
   border-radius: 10px;
   margin: 25px;
@@ -217,6 +217,7 @@ body {
 
 #bigger {
   font-size: 25px;
+  color: rgb(100, 84, 221);
 }
 
 .homeMain {

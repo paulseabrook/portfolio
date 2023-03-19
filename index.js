@@ -70,15 +70,21 @@ aboutNav.addEventListener('click', () => {
   })
 })
 
-let prevScrollpos = window.pageYOffset
-window.onscroll = function () {
-  console.log('Working')
-  let currentScrollPos = window.pageYOffset
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.nav-menu').style.top = '0'
-  } else {
-    document.querySelector('.nav-menu').style.top = '-50px'
-    console.log(document.querySelector('.nav-menu'))
-  }
-  prevScrollpos = currentScrollPos
-}
+//TODO
+
+// need to add animations
+
+// code before possibly making nav-menu scroll better.
+
+// let prevScrollpos = window.pageYOffset
+// window.onscroll = function () {
+//   console.log('Working')
+//   let currentScrollPos = window.pageYOffset
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector('.nav-menu').style.top = '0'
+//   } else {
+//     document.querySelector('.nav-menu').style.top = '-50px'
+//     console.log(document.querySelector('.nav-menu'))
+//   }
+//   prevScrollpos = currentScrollPos
+// }
