@@ -22,6 +22,7 @@ body {
 }
 
 .Main {
+  /* display: flex; */
   height: 100vh;
   width: 100%;
   border: solid rgb(118, 115, 115) 10px;
@@ -112,7 +113,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
-  height: 50vh;
   margin-bottom: 20px;
 }
 
@@ -366,12 +366,13 @@ a {
   }
 
   .homeContent {
-    height: 500px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    min-height: 200px;
   }
 
   .homeInfo > * {
