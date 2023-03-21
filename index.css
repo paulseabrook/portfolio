@@ -426,12 +426,6 @@ a {
   }
 }
 
-@media (max-width: 400px) {
-  .header0 {
-    font-size: 15px;
-  }
-}
-
 @media (max-width: 450px) {
   .header0 {
     font-size: 15px;
