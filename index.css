@@ -47,13 +47,12 @@ body {
 }
 
 .homeContent {
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1.5em;
   width: 75%;
-  height: 75%;
+  height: 70%;
 }
 
 .homeContent > * {
@@ -383,7 +382,6 @@ a {
   }
 
   .homeContent {
-    padding: 20px;
     flex-direction: column;
   }
 
@@ -394,7 +392,6 @@ a {
   }
 
   .arrowToSkills {
-    margin-bottom: 30px;
   }
 
   .homeHeader {
