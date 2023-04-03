@@ -21,6 +21,14 @@ body {
   background-color: rgb(118, 115, 115);
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background-color: rgb(35, 66, 89);
+}
+
 .Main {
   width: 100%;
   border: solid rgb(118, 115, 115) 10px;
@@ -149,11 +157,12 @@ body {
 
 .projectsHeader {
   font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .projectsMainInner {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
@@ -171,6 +180,35 @@ body {
 
 .projectLink {
   font-size: 25px;
+}
+
+.projectImage {
+  width: 650px;
+  height: 400px;
+  border: rgba(255, 255, 255, 0.431) solid 5px;
+  border-radius: 10px;
+}
+
+.custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom > h4 {
+  margin-bottom: 10px;
+}
+
+.WordPress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.WordPress > h4 {
+  margin-bottom: 10px;
 }
 
 .codeLink {
@@ -251,6 +289,8 @@ body {
 
 .projectsMain {
   background: linear-gradient(0deg, rgb(83, 79, 146) 17%, rgb(167, 91, 91) 73%);
+  display: flex;
+  flex-direction: column;
 }
 
 .aboutMain {
@@ -324,6 +364,21 @@ a {
   border-radius: 10px;
 }
 
+.arrowToAbout {
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1200px) {
+  .projectsMainInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+  }
+}
+
 @media (max-width: 1100px) {
   .aboutContent {
     flex-direction: column;
@@ -372,6 +427,11 @@ a {
 
   .nav-menu.active {
     left: 0;
+  }
+
+  .projectImage {
+    width: 300px;
+    height: 200px;
   }
 }
 
