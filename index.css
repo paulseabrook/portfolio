@@ -27,10 +27,11 @@ body {
   justify-content: center;
   height: 30px;
   background-color: rgb(35, 66, 89);
+  padding: 1rem;
+  text-align: center;
 }
 
 .Main {
-  width: 100%;
   border: solid rgb(118, 115, 115) 10px;
   border-radius: 10px;
   border-radius: 2px 4px 0 0;
@@ -72,7 +73,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+  padding: 5rem 0;
 }
 
 .skillsMainInner {
@@ -80,7 +82,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  padding: 5rem;
 }
 
 .skillsContainer {
@@ -123,11 +125,12 @@ body {
 .socialIcons {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  padding: 2rem 0;
 }
 
 .socialIcons > * {
   font-size: 30px;
+  padding: 0 2rem;
 }
 
 .fa-linkedin-in {
@@ -165,7 +168,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  padding: 2.5rem 0;
+
+  @media (max-width: 576px) {
+    padding: 1rem 0;
+  }
+}
+
+.project-para {
+  padding: 2rem;
+  text-align: center;
+  max-width: 550px;
 }
 
 .projectsGrid {
@@ -174,8 +187,6 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 15px;
   grid-row-gap: 15px;
-  height: 400px;
-  width: 500px;
 }
 
 .projectLink {
@@ -183,8 +194,8 @@ body {
 }
 
 .projectImage {
-  width: 650px;
-  height: 400px;
+  max-width: 100%;
+  height: auto;
   border: rgba(255, 255, 255, 0.431) solid 5px;
   border-radius: 10px;
 }
@@ -192,19 +203,40 @@ body {
 .custom {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .custom > h4 {
   margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.WordPress {
+.wordpress_contain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.wordpress_contain .projectContainer {
+  border: none;
+}
+
+.wordpress_contain h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.wordpress_projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.project {
+  max-width: 100px;
+  height: 100px;
 }
 
 .WordPress > h4 {
@@ -223,6 +255,9 @@ body {
   border: rgba(255, 255, 255, 0.431) solid 5px;
   padding: 10px;
   border-radius: 10px;
+  max-width: 300px;
+  height: auto;
+  min-height: 150px;
 }
 
 .aboutInnerMain {
@@ -230,7 +265,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
+  padding: 5rem 0;
 }
 
 .aboutContent {
@@ -253,6 +288,7 @@ body {
 
 #aboutHeader {
   font-size: 36px;
+  padding: 2rem 0;
 }
 
 #casualHeadshot {
@@ -329,6 +365,10 @@ a {
   padding: 0 24px;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -375,7 +415,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
   }
 }
 
@@ -430,8 +469,8 @@ a {
   }
 
   .projectImage {
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -449,9 +488,6 @@ a {
     font-size: 15px;
     margin: 7px;
     height: none;
-  }
-
-  .arrowToSkills {
   }
 
   .homeHeader {
@@ -476,6 +512,11 @@ a {
     flex-direction: column;
     height: 400px;
     width: 200px;
+
+    @media (max-width: 576px) {
+      height: unset;
+      width: unset;
+    }
   }
 
   .aboutMain {
