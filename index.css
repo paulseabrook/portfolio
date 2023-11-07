@@ -510,13 +510,8 @@ a {
   .projectsGrid {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 200px;
-
-    @media (max-width: 576px) {
-      height: unset;
-      width: unset;
-    }
+    margin: auto;
+    width: 75%;
   }
 
   .aboutMain {
